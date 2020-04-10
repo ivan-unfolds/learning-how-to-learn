@@ -1,0 +1,300 @@
+import { themes } from "mdx-deck";
+import Highlighter from "react-syntax-highlighter";
+import { shadesOfPurple } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+import learningPyramid from "./assets/learning-pyramid.png";
+import makeItStick from "./assets/make-it-stick-book.png";
+
+export const theme = {
+  ...themes.code,
+  styles: {
+    ...themes.code.styles,
+    Slide: {
+      maxWidth: "90%",
+      marginRight: "auto",
+      marginLeft: "auto",
+    },
+  },
+};
+
+# Learning how to learn 🤓
+
+---
+
+## Short intro
+
+- This is a picture of me
+- I did FAC7
+- I work for InFact, a cooperative made up of 3 FAC alumni
+
+---
+
+## Make it stick
+
+<Image
+  src={makeItStick}
+  style={{
+    maxWidth: "800px",
+    width: "70vw",
+    backgroundSize: "contain",
+  }}
+/>
+
+---
+
+## Why should you care about this?
+
+- As developers, we want to be constantly learning (but we won't get much time to)
+- Ultimately it's about the return on our time investment (and time is the only finite resource we have)
+- The better we can make use of this time, the more beautiful products we'll be able to build
+
+<Notes>
+
+- Notes
+  - We want to be constantly learning because coding things you already know how to do get boring real quick
+  - This isn't just about coding, this applies to life in general
+
+</Notes>
+
+---
+
+## The takeaways
+
+- We're really bad at judging how well we're learning (which leads us to use inefficient learning practices)
+- Learning that feels easy is easily forgotten (i.e. to be useful learning should feel hard)
+
+<Notes>
+
+- Notes
+  - Heard somewhere that we should start with the conclusion
+
+</Notes>
+
+---
+
+## How we delude ourselves
+
+- Most of us use study techniques that give us a false sense of confidence
+- Rereading and highlighting texts (the two most common study methods) lead to the biggest delusions
+- Learning illusions are a type of cognitive bias (which means we all fall prey to them)
+
+<Notes>
+
+- Notes
+  - Cramming is an example of this
+  - Why is the sky blue?
+  - A book you just read or a Ted talk
+
+</Notes>
+
+---
+
+## Can we avoid deluding ourselves?
+
+- Yes! We can use better methods for studying and learning
+- The bad news is that in the short term it will take more effort and slow you down
+- The good news is that it works like compound interest - in the long run, your results will increase exponentially
+
+---
+
+## Active participant vs passive absorber
+
+<Image
+  src={learningPyramid}
+  style={{
+    maxWidth: "800px",
+    width: "70vw",
+    backgroundSize: "contain",
+  }}
+/>
+
+<Notes>
+
+- Notes
+  - The FAC week follows the structure quite well
+  - This is why you are discouraged from copy/pasting, it puts you in the passive end of the spectrum
+
+</Notes>
+
+---
+
+# What study techniques lead to robust durable learning? 💪🏽
+
+---
+
+## First, a brief foray into the science of learning
+
+### Learning works in 3 stages
+
+1. Initial encoding - memory traces are 'encoded' in your short term memory
+2. Consolidation - the new material is connected to prior learning
+3. Retrieval - the learning is made durable and easily accessible
+
+<Notes>
+
+- Notes
+  - Variable -> symbol in algebra -> box that we can put something into
+  - The more you know the more you can know (languages)
+
+</Notes>
+
+---
+
+## Effortful retrieval
+
+- An analogy is making a path in a dense forest
+- Emphasis on the "effortful" part
+
+<Notes>
+
+- Notes
+  - How do you make a path more defined? How do you make the destination easier to get to?
+  - Effortful as opposed to cramming
+
+</Notes>
+
+---
+
+## Desirable difficulties
+
+- There are some difficulties that you can impose on yourself when learning that make learning likely to stick better
+- The more effort required to retrieve something, the better you learn it
+
+<Notes>
+
+- Example: do not copy and paste
+
+</Notes>
+
+---
+
+## Desirably difficult method number 1: Self-testing
+
+- A typical example of this is flashcards (although they have limited scope for programming)
+- Go through a tutorial, then the next day build it again without looking at the tutorial
+- Works best when some forgetting has already set in (as opposed to cramming)
+- Should be low-stakes
+
+<Notes>
+
+- Notes
+  - Tutorial on how to test a server
+  - Flashcards might be helpful for definitions
+
+</Notes>
+
+---
+
+## Advantages of self-testing
+
+- Effortful retrieval so learning is securely embedded
+- Helps uncover the gaps in our knowledge
+
+<Notes>
+
+- Notes
+  - Of course one of the best forms of self-testing is to build something
+  - Important to develop a good nose for these gaps
+
+</Notes>
+
+---
+
+## Desirably difficult method number 2: Generation
+
+- Attempting to solve a problem without being shown the solution
+- Open our brains up for learning 🧠
+- We're leveraging our emotions to make the learning stick when we're eventually shown the answer
+
+<!--
+<Highlighter language="javascript" style={shadesOfPurple}>
+
+{`const funFacts = {ivan: "likes to 🧘🏽‍♂️"}
+const funFactsCopy = {ivan: "likes to 🧘🏽‍♂️"}
+
+console.log(funFacts === funFactsCopy)
+`}
+
+
+</Highlighter>
+-->
+
+<!-- todo look at Dan Abramov's Javascript building blocks for examples of foundational parts -->
+
+<Notes>
+
+- Notes
+  - An example of this is morning challenges
+  - By struggling -> challenge assumptions
+  - In a sense, you are leveraging your emotions here. If you get it right, you'll get a dopamine hit which will lodge the learning in your brain better, if it was incorrect the negative emotion will serve to lodge the memory in
+
+</Notes>
+
+---
+
+## Desirable difficulty number 3: Elaboration
+
+- Elaboration is when you give material new meaning by expressing it in your own words
+- You connect it to what you already know, helping your brain know where to embed the knowledge
+
+---
+
+## There's always a cost 💵
+
+- These techniques will slow you down
+- They will take more mental energy
+- You'll have to get used to not knowing the answer and to making errors
+- ...and the emotions that come with that 😞
+
+<Notes>
+
+- Notes
+  - These impediments will more than compensate for their inconvenience by making the learning stronger, more precise and more enduring.
+  - Not just for coding - having to let go of my attachments to just read books without thinking too much about them
+  - Paradoxical and annoying but it is exactly that feeling of not being good enough that keeps us striving
+
+</Notes>
+
+---
+
+## Countering the myth of errorless learning
+
+- It is about the meaning that we make out of our "failures"
+- Growth mindset
+- "Failure" as a signal for growth
+
+<Notes>
+
+- Notes
+  - We have to get used to this feeling, because this feeling is the signal that we are learning best
+  - When babies are learning to walk or run they are constantly "failing". The difference is that they don't assign any meaning to it.
+
+</Notes>
+
+---
+
+## Bonus tips
+
+- Practice like you play and you will play like you practice 🏅
+- Be strategic about your learning
+- Don't be afraid to invest in your learning
+- Make sure you have that repository
+
+<Notes>
+
+- Notes
+  - Learning French in a classroom versus talking about it
+  - I tend to veer to the side of analytical consumption, learn to recognise where you veer to and try to have a balance
+
+</Notes>
+
+---
+
+## Going full circle ⚪
+
+- We're really bad at judging how well we're learning (which leads us to use inefficient learning practices)
+- Learning that feels easy is easily forgotten (i.e. to be useful learning should feel hard)
+
+---
+
+# Questions? 🤔
