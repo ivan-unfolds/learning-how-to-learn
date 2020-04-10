@@ -2,19 +2,15 @@ import { themes } from "mdx-deck";
 import Highlighter from "react-syntax-highlighter";
 import { shadesOfPurple } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
+import { customTheme } from "./theme";
+
 import learningPyramid from "./assets/learning-pyramid.png";
 import makeItStick from "./assets/make-it-stick-book.png";
+import me from "./assets/ivan.jpg";
 
 export const theme = {
   ...themes.code,
-  styles: {
-    ...themes.code.styles,
-    Slide: {
-      maxWidth: "90%",
-      marginRight: "auto",
-      marginLeft: "auto",
-    },
-  },
+  ...customTheme,
 };
 
 # Learning how to learn 🤓
@@ -23,15 +19,27 @@ export const theme = {
 
 ## Short intro
 
-- This is a picture of me
-- I did FAC7
+<SplitRight>
+
+<img
+  src={me}
+  style={{
+    width: "70%",
+    backgroundSize: "contain",
+  }}
+/>
+
+- This is me ->
+- I was part of FAC7
 - I work for InFact, a cooperative made up of 3 FAC alumni
+
+</SplitRight>
 
 ---
 
 ## Make it stick
 
-<Image
+<img
   src={makeItStick}
   style={{
     maxWidth: "800px",
@@ -42,7 +50,7 @@ export const theme = {
 
 ---
 
-## Why should you care about this?
+## Why should you care about this? ¯\\\_(ツ)\_/¯
 
 - As developers, we want to be constantly learning (but we won't get much time to)
 - Ultimately it's about the return on our time investment (and time is the only finite resource we have)
@@ -58,7 +66,7 @@ export const theme = {
 
 ---
 
-## The takeaways
+## The takeaways 🎬
 
 - We're really bad at judging how well we're learning (which leads us to use inefficient learning practices)
 - Learning that feels easy is easily forgotten (i.e. to be useful learning should feel hard)
@@ -72,7 +80,7 @@ export const theme = {
 
 ---
 
-## How we delude ourselves
+## How we delude ourselves 🥴
 
 - Most of us use study techniques that give us a false sense of confidence
 - Rereading and highlighting texts (the two most common study methods) lead to the biggest delusions
@@ -97,9 +105,10 @@ export const theme = {
 
 ---
 
-## Active participant vs passive absorber
+## Active participant‍ 🏃🏽‍♂️ vs passive absorber 👀
 
-<Image
+<im
+  g
   src={learningPyramid}
   style={{
     maxWidth: "800px",
@@ -122,9 +131,9 @@ export const theme = {
 
 ---
 
-## First, a brief foray into the science of learning
+## First, a brief foray into the science of learning 👩🏽‍🔬
 
-### Learning works in 3 stages
+### Learning works in 3 stages 3️⃣
 
 1. Initial encoding - memory traces are 'encoded' in your short term memory
 2. Consolidation - the new material is connected to prior learning
@@ -168,7 +177,7 @@ export const theme = {
 
 ---
 
-## Desirably difficult method number 1: Self-testing
+## Desirably difficult method number 1: Self-testing 🧪
 
 - A typical example of this is flashcards (although they have limited scope for programming)
 - Go through a tutorial, then the next day build it again without looking at the tutorial
@@ -200,7 +209,7 @@ export const theme = {
 
 ---
 
-## Desirably difficult method number 2: Generation
+## Desirably difficult method number 2: Generation 🧞‍♂️
 
 - Attempting to solve a problem without being shown the solution
 - Open our brains up for learning 🧠
@@ -232,7 +241,7 @@ console.log(funFacts === funFactsCopy)
 
 ---
 
-## Desirable difficulty number 3: Elaboration
+## Desirable difficulty number 3: Elaboration ✍️
 
 - Elaboration is when you give material new meaning by expressing it in your own words
 - You connect it to what you already know, helping your brain know where to embed the knowledge
@@ -251,7 +260,7 @@ console.log(funFacts === funFactsCopy)
 - Notes
   - These impediments will more than compensate for their inconvenience by making the learning stronger, more precise and more enduring.
   - Not just for coding - having to let go of my attachments to just read books without thinking too much about them
-  - Paradoxical and annoying but it is exactly that feeling of not being good enough that keeps us striving
+  - Good to set proper expectations
 
 </Notes>
 
@@ -273,12 +282,12 @@ console.log(funFacts === funFactsCopy)
 
 ---
 
-## Bonus tips
+## Bonus tips 💯
 
 - Practice like you play and you will play like you practice 🏅
 - Be strategic about your learning
 - Don't be afraid to invest in your learning
-- Make sure you have that repository
+- Make sure you have that repository 📝
 
 <Notes>
 
@@ -306,3 +315,4 @@ console.log(funFacts === funFactsCopy)
 - [Make it Stick](https://www.goodreads.com/book/show/18770267-make-it-stick) book
 - My favourite learning repository: [Notion](https://www.notion.so/)
 - Kent C. Dodds's [post](https://kentcdodds.com/blog/how-i-teach) on learning
+- My [blog](https://ivanmauric.io) where I explore this topic in more depth
